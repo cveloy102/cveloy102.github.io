@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Приложения cveloy102 для Android, Windows и macOS и инструменты для своего сервера. Страницы проектов, инструкции и релизы.">
+  <title>cveloy102 — каталог приложений</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="showcase.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#catalog">К каталогу приложений</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="wordmark" href="#top" aria-label="cveloy102, начало страницы">cveloy102<span aria-hidden="true">_</span></a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a>
+        <a class="github-link" href="https://github.com/cveloy102">GitHub<span class="handle"> / cveloy102</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="intro">
+        <h1 id="hero-title">Софт для своих устройств<span class="accent">.</span></h1>
+        <p class="lead">Передать папку с телефона на Mac, увидеть заряд наушников, включить VPN за порогом дома.</p>
+        <a class="primary" href="#catalog">Открыть каталог</a>
+      </div>
+
+      <div class="workbench">
+        <div class="workbench-bar">
+          <span class="small-label" id="featured-label">В фокусе</span>
+          <div class="segments" role="group" aria-labelledby="featured-label" data-feature-controls hidden>
+            <button type="button" aria-pressed="true" aria-controls="feature-buds">Buds 5</button>
+            <button type="button" aria-pressed="false" aria-controls="feature-autoturn">AutoTurn</button>
+            <button type="button" aria-pressed="false" aria-controls="feature-drop">DROP</button>
+          </div>
+        </div>
+        <div class="display" aria-live="polite">
+          <figure class="feature" id="feature-buds">
+            <div class="stage stage-buds">
+              <img src="assets/buds.webp" width="1024" height="512" alt="Два графитовых наушника Xiaomi Buds 5 по сторонам от зарядного кейса.">
+            </div>
+            <figcaption><strong>Xiaomi Buds 5 Overlay</strong><a href="https://cveloy102.github.io/buds-curtain/">Страница проекта</a></figcaption>
+          </figure>
+          <figure class="feature" id="feature-autoturn" hidden>
+            <div class="stage stage-autoturn">
+              <img class="mac-screen" src="assets/autoturn-mac.webp" width="600" height="553" alt="Окно AutoTurn с состоянием VPN на macOS.">
+              <img class="phone-screen" src="assets/autoturn-android.webp" width="620" height="1343" alt="Главный экран Android со статусом «На связи».">
+            </div>
+            <figcaption><strong>AutoTurn VPN</strong><div class="caption-links"><a href="https://cveloy102.github.io/autoturn-vpn/">Android</a><a href="https://cveloy102.github.io/autoturn-macos/">macOS</a></div></figcaption>
+          </figure>
+          <figure class="feature" id="feature-drop" hidden>
+            <div class="stage stage-drop">
+              <img src="assets/drop-windows.webp" width="920" height="681" alt="Окно DROP на Windows со списком устройств в локальной сети.">
+            </div>
+            <figcaption><strong>DROP</strong><a href="https://cveloy102.github.io/hl100-drop/">Страница проекта</a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog shell" id="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-top">
+        <div class="catalog-heading"><h2 id="catalog-title">Каталог</h2><span class="result-count" role="status" aria-atomic="true">8 продуктов</span></div>
+        <div class="filters" role="group" aria-label="Фильтр по платформе" data-filter-controls hidden>
+          <button type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button type="button" data-filter="android" aria-pressed="false">Android</button>
+          <button type="button" data-filter="windows" aria-pressed="false">Windows</button>
+          <button type="button" data-filter="macos" aria-pressed="false">macOS</button>
+          <button type="button" data-filter="ubuntu" aria-pressed="false">Ubuntu</button>
+        </div>
+      </div>
+      <div class="products">
+        <article class="product" data-platforms="android macos">
+          <div class="product-main">
+            <div class="product-copy"><p class="platform">Android · macOS</p><h3>AutoTurn VPN</h3><p>Дома трафик идёт напрямую. При выходе из домашней сети приложение само включает ваш VPN.</p></div>
+            <div class="mini mini-phone" aria-hidden="true"><img src="assets/autoturn-android.webp" width="620" height="1343" loading="lazy" alt=""></div>
+          </div>
+          <div class="links"><a href="https://cveloy102.github.io/autoturn-vpn/">Сайт для Android</a><a href="https://cveloy102.github.io/autoturn-macos/">Сайт для macOS</a></div>
+        </article>
+        <article class="product" data-platforms="android">
+          <div class="product-main">
+            <div class="product-copy"><p class="platform">Android · тестовая версия</p><h3>Xiaomi Buds 5 Overlay</h3><p>При открытии кейса появляется карточка с зарядом левого наушника, кейса и правого наушника.</p></div>
+            <div class="mini mini-buds" aria-hidden="true"><img src="assets/buds.webp" width="1024" height="512" loading="lazy" alt=""></div>
+          </div>
+          <div class="links"><a href="https://cveloy102.github.io/buds-curtain/">Страница проекта</a><a href="https://github.com/cveloy102/buds-curtain/releases/tag/v0.7.1">Тестовый релиз</a></div>
+        </article>
+        <article class="product" data-platforms="android windows macos">
+          <div class="product-main">
+            <div class="product-copy"><p class="platform">Windows · Android · macOS</p><h3>DROP</h3><p>Передаёт файлы и папки между устройствами в одной сети. Прерванную передачу можно продолжить.</p></div>
+            <div class="mini mini-window" aria-hidden="true"><img src="assets/drop-windows.webp" width="920" height="681" loading="lazy" alt=""></div>
+          </div>
+          <div class="links"><a href="https://cveloy102.github.io/hl100-drop/#download">Выбрать сборку</a><a href="https://cveloy102.github.io/hl100-drop/guide.html">Инструкция</a></div>
+        </article>
+        <article class="product" data-platforms="android windows">
+          <div class="product-main">
+            <div class="product-copy"><p class="platform">Android + Windows</p><h3>Пульт</h3><p>Управляет питанием, таймером и звуком ПК с телефона. Для подключения нужны приложение и агент на компьютере.</p></div>
+            <div class="mini pairing" role="img" aria-label="Телефон соединяется с агентом на ПК по QR-коду"><span class="monitor"></span><span class="pair-code">QR</span><span class="handset"></span></div>
+          </div>
+          <div class="links"><a href="https://github.com/cveloy102/pult/releases/tag/android-v0.2.0">Релиз Android</a><a href="https://github.com/cveloy102/pult/releases/tag/agent-v0.2.0">Релиз агента Windows</a><a href="https://github.com/cveloy102/pult#первый-запуск">Подключение</a></div>
+        </article>
+        <article class="product" data-platforms="windows">
+          <div class="product-main">
+            <div class="product-copy"><p class="platform">Windows</p><h3>RED_ROUTE</h3><p>VPN для Windows с тремя режимами. Через профиль можно направить весь трафик или только выбранные сервисы.</p></div>
+            <div class="mini mini-window" aria-hidden="true"><img src="assets/red-route.webp" width="480" height="537" loading="lazy" alt=""></div>
+          </div>
+          <div class="links"><a href="https://github.com/cveloy102/RED_ROUTE/releases/latest">Релиз Windows</a><a href="https://github.com/cveloy102/RED_ROUTE#red_route">Описание</a></div>
+        </article>
+        <article class="product" data-platforms="android windows">
+          <div class="product-main">
+            <div class="product-copy"><p class="platform">Android · Windows</p><h3>СВАЛКА</h3><p>Списки дел, покупок, ссылок и мыслей с напоминаниями. Для синхронизации можно подключить свой сервер.</p></div>
+            <div class="mini mini-phone" aria-hidden="true"><img src="assets/svalka.webp" width="310" height="671" loading="lazy" alt=""></div>
+          </div>
+          <div class="links"><a href="https://github.com/cveloy102/reminder/releases/tag/v2.1">Релиз Android</a><a href="https://github.com/cveloy102/reminder/releases/tag/windows-v0.4.2">Релиз Windows</a><a href="https://github.com/cveloy102/reminder#интерфейс">Экраны</a></div>
+        </article>
+        <article class="product" data-platforms="windows">
+          <div class="product-main">
+            <div class="product-copy"><p class="platform">Windows</p><h3>PULL</h3><p>Сохраняет видео по ссылке, из встроенного браузера или записью окна. Загрузки собираются в одной очереди.</p></div>
+            <div class="mini mini-window" aria-hidden="true"><img src="assets/pull.webp" width="690" height="442" loading="lazy" alt=""></div>
+          </div>
+          <div class="links"><a href="https://github.com/cveloy102/pull-video-downloader/releases/latest">Релиз Windows</a><a href="https://github.com/cveloy102/pull-video-downloader#четыре-способа-сохранить-видео">Способы загрузки</a></div>
+        </article>
+        <article class="product" data-platforms="ubuntu">
+          <div class="product-main">
+            <div class="product-copy"><p class="platform">Ubuntu · свой сервер</p><h3>Relay Panel</h3><p>Веб-панель для Telegram WEB Proxy на своём VPS. В браузере доступны ключи, QR-коды и статистика трафика.</p></div>
+            <div class="mini mini-window" aria-hidden="true"><img src="assets/relay.webp" width="620" height="372" loading="lazy" alt=""></div>
+          </div>
+          <div class="links"><a href="https://github.com/cveloy102/telegram-webproxy-panel#-что-нужно-заранее">Что понадобится</a><a href="https://github.com/cveloy102/telegram-webproxy-panel#-установка">Инструкция по установке</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="shell foot"><a class="wordmark" href="#top" aria-label="cveloy102, к началу">cveloy102<span aria-hidden="true">_</span></a><a class="foot-link" href="https://github.com/cveloy102">cveloy102 на GitHub</a></div></footer>
+</body>
+</html>
